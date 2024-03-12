@@ -11,11 +11,58 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- /* Font Awesome Kit: */ -->
     <script src="https://kit.fontawesome.com/5b095c110d.js" crossorigin="anonymous"></script>
+    <!-- /* Style Link: */ -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <section>
-        <h1>Money Master <span><i class="fa-solid fa-sack-dollar"></i></span></h1>
+    <section class="container bg-light my-2 p-3">
+        <h1 class="text-primary text-center fw-bold">Money Master <span><i
+                    class="fa-solid fa-sack-dollar text-warning"></i></span></h1>
+        <div class="row my-5 p-3">
+            <div class="col-sm">
+                <img class="img-fluid" src="img/moneyMaster.png" alt="Money Master Image">
+            </div>
+            <div class="col-sm">
+                <h4 class="text-center">Income</h4>
+                <div class="text-center my-2 input-div">
+                    <label for="income">Income:</label>
+                    <input class="w-50" type="number" name="income" id="income">
+                </div>
+                <h4 class="text-center my-2">Expenses</h4>
+                <div class="text-center my-2 input-div">
+                    <label for="food">Food:</label>
+                    <input class="w-50" type="number" name="food" id="food">
+                </div>
+                <div class="text-center my-2 input-div">
+                    <label for="rent">Rent:</label>
+                    <input class="w-50" type="number" name="rent" id="rent">
+                </div>
+                <div class="text-center my-2 input-div">
+                    <label for="clothes">Clothes:</label>
+                    <input class="w-50" type="number" name="clothes" id="clothes">
+                </div>
+                <div class="text-center my-2">
+                    <button class="btn btn-info text-white fw-bold px-5 py-1 my-2">Calculate</button>
+                </div>
+                <h3 class="text-center my-2">Total Expenses: <span></span></h3>
+                <h3 class="text-center my-2">Balance: <span></span></h3>
+                <div class="d-flex justify-content-around text-center my-2">
+                    <div>
+                        <label for="save">Save:</label>
+                        <input type="number" name="save" id="save">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-percent text-warning"></i>
+                    </div>
+                    <div>
+                        <button class="btn btn-info text-white px-5 py-1 fw-bold">Save</button>
+                    </div>
+                </div>
+                <h3 class="text-center my-2">Saving Amount: <span></span></h3>
+                <h3 class="text-center my-2">Remaining Balance: <span></span></h3>
+            </div>
+        </div>
     </section>
 
     <!-- /* Bootstrap Script Link: */ -->
