@@ -43,20 +43,20 @@
                     <input class="w-50" type="number" name="clothes" id="clothes">
                 </div>
                 <div class="text-center my-2">
-                    <button class="btn btn-info text-white fw-bold px-5 py-1 my-2">Calculate</button>
+                    <button id="calculate-btn" class="btn btn-info text-white fw-bold px-5 py-1 my-2">Calculate</button>
                 </div>
-                <h3 class="text-center my-2">Total Expenses: <span></span></h3>
-                <h3 class="text-center my-2">Balance: <span></span></h3>
+                <h3 class="text-center my-2">Total Expenses: <span id="total-expenses"></span></h3>
+                <h3 class="text-center my-3">Balance: <span id="balance-amount"></span></h3>
                 <div class="d-flex justify-content-around text-center my-2">
                     <div>
                         <label for="save">Save:</label>
                         <input type="number" name="save" id="save">
                     </div>
                     <div>
-                        <i class="fa-solid fa-percent text-warning"></i>
+                        <i class="fa-solid fa-percent text-warning fs-4 bg-info-subtle p-2"></i>
                     </div>
                     <div>
-                        <button class="btn btn-info text-white px-5 py-1 fw-bold">Save</button>
+                        <button id="save-btn" class="btn btn-info text-white px-5 py-1 fw-bold">Save</button>
                     </div>
                 </div>
                 <h3 class="text-center my-2">Saving Amount: <span></span></h3>
@@ -69,6 +69,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- JavaScript Link: -->
+    <script src="js/common.js"></script>
+    <script src="js/calculate.js"></script>
 </body>
 
 </html>
