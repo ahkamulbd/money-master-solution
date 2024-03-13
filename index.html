@@ -50,7 +50,7 @@
                 <div class="d-flex justify-content-around text-center my-2">
                     <div>
                         <label for="save">Save:</label>
-                        <input type="number" name="save" id="save">
+                        <input id="save-field" type="number" name="save" id="save">
                     </div>
                     <div>
                         <i class="fa-solid fa-percent text-warning fs-4 bg-info-subtle p-2"></i>
@@ -59,8 +59,8 @@
                         <button id="save-btn" class="btn btn-info text-white px-5 py-1 fw-bold">Save</button>
                     </div>
                 </div>
-                <h3 class="text-center my-2">Saving Amount: <span></span></h3>
-                <h3 class="text-center my-2">Remaining Balance: <span></span></h3>
+                <h3 class="text-center my-2">Saving Amount: <span id="saving-amount"></span></h3>
+                <h3 class="text-center my-2">Remaining Balance: <span id="remaining-balance"></span></h3>
             </div>
         </div>
     </section>
